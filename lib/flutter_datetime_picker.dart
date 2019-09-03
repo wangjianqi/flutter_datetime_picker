@@ -298,6 +298,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
                 }
                 return false;
               },
+              ///iOSpicker
               child: CupertinoPicker.builder(
                   key: key,
                   backgroundColor: theme.backgroundColor ?? Colors.white,
@@ -393,6 +394,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
         children: <Widget>[
           Container(
             height: theme.titleHeight,
+            ///iOSa按钮
             child: CupertinoButton(
               pressedOpacity: 0.3,
               padding: EdgeInsets.only(left: 16, top: 0),
@@ -424,7 +426,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
       ),
     );
   }
-
+///本地化
   String _localeDone() {
     return i18nObjInLocale(widget.locale)['done'];
   }
